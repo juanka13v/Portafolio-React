@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: sans-serif;
+  background-color: var(--fondo-color);
+}
+
+:root {
+  --first-font: "Open Sans", sans-serif;
+  --second-font: "Roboto", sans-serif;
+
+  --fondo-color : #030303;
+  --fondo-color-2: #1a1a1b;
+
+  --font-color: #d7dadc;
+  --font-color-2: rgb(129 131 132);
+
+  --border-color: #343536;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
