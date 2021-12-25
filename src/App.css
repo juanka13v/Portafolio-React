@@ -2,6 +2,19 @@
     padding: 20px 24px;
 }
 
+.container {
+    max-width: 1100px;
+    width: 100%;
+    background-color: var(--fondo-color-2);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--font-color);
+    margin-bottom: 1rem !important;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
 @media screen and (max-width: 480px){
     .App {
         padding: 0;

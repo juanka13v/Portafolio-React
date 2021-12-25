@@ -1,0 +1,43 @@
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+
+.footer_link-item {
+    margin: 3px 0;
+}
+
+.footer_social-media a{
+    font-size: 25px;
+    margin: 0 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_container {
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .footer_created {
+        width: 50%;
+    }
+    
+    .footer_links {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_social-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+}
+

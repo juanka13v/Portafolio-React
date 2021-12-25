@@ -1,13 +1,12 @@
 import React from "react";
-import Container from "./Container";
 import miFoto from "../images/Mi-foto.png";
 import "./hero.css";
 
 const Hero = () => {
   return (
     <>
-      <Container >
-        <main className="hero_container">
+      <main className="container">
+        <div className="hero_container">
           <div className="hero">
             <img src={miFoto} alt="mi foto" className="hero_img" />
             <div className="hero_title">
@@ -17,8 +16,8 @@ const Hero = () => {
           </div>
 
           <div className="slider"></div>
-        </main>
-      </Container>
+        </div>
+      </main>
     </>
   );
 };

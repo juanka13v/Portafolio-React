@@ -15,6 +15,7 @@ html, body {
 
   --fondo-color : #030303;
   --fondo-color-2: #1a1a1b;
+  --fondo-color-3: #2d2d2e;
 
   --font-color: #d7dadc;
   --font-color-2: rgb(129 131 132);
@@ -25,4 +26,13 @@ html, body {
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
 }
