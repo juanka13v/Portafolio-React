@@ -1,6 +1,7 @@
 import React from "react";
 import miFoto from "../images/Mi-foto.png";
 import "./hero.css";
+import Slider from "./Slider";
 
 const Hero = () => {
   return (
@@ -15,7 +16,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="slider"></div>
+          <div className="slider">
+            <Slider />
+          </div>
         </div>
       </main>
     </>
