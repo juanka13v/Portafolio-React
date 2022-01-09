@@ -1,0 +1,13 @@
+.title_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.title {
+    color: var(--font-color);
+    font-family: var(--first-font);
+    border-bottom: 4px solid var(--border-color) ;
+}

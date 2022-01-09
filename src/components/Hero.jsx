@@ -12,7 +12,7 @@ const Hero = () => {
             <img src={miFoto} alt="mi foto" className="hero_img" />
             <div className="hero_title">
               <h2>Desarollador Web</h2>
-              <h3>Juan C. Valero...</h3>
+              <h3>Juan C. Valero</h3>
             </div>
           </div>
 

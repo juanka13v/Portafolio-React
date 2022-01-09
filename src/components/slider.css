@@ -4,7 +4,10 @@ button {
 
 .contenedor_slider {
   position: relative;
+  width: 400px;
+  overflow: hidden;
 }
+
 
 .slider_show {
   display: flex;
