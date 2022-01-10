@@ -1,0 +1,46 @@
+.skill_group {
+    border: 1px solid slateblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.group_title {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.group {
+    width: 100%;
+    padding: 1rem;
+}
+
+.group_items {
+    display: grid;
+    border-radius: 7px;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 125px));
+    justify-items: stretch;
+    gap: 10px 10px;
+}
+
+.group_item {
+    padding: .5rem;
+    border: 2px solid #666666;
+    border-radius: 10px;
+}
+
+.group_item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group_item svg {
+    font-size: 50px;
+}
+
+.group_item p {
+    text-align: center;
+}

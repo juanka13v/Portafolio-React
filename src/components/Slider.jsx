@@ -10,21 +10,19 @@ const Slider = () => {
   const interval = useRef(null);
 
   const handleNext = () => {
-    if (slideRef.current.children.length > 0) {
-      const firstElement = slideRef.current.children[0];
-      slideRef.current.style.transition = `300ms ease-out all`;
-      slideRef.current.style.transform = "translateX(-100%)";
-      const transition = () => {
-        slideRef.current.style.transition = "none";
-        slideRef.current.style.transform = "translateX(0)";
+    const firstElement = slideRef.current.children[0];
+    slideRef.current.style.transition = `300ms ease-out all`;
+    slideRef.current.style.transform = "translateX(-100%)";
+    const transition = () => {
+      slideRef.current.style.transition = "none";
+      slideRef.current.style.transform = "translateX(0)";
 
-        slideRef.current.appendChild(firstElement);
+      slideRef.current.appendChild(firstElement);
 
-        slideRef.current.removeEventListener("transitionend", transition);
-      };
+      slideRef.current.removeEventListener("transitionend", transition);
+    };
 
-      slideRef.current.addEventListener("transitionend", transition);
-    }
+    slideRef.current.addEventListener("transitionend", transition);
   };
 
   const handlePrev = () => {

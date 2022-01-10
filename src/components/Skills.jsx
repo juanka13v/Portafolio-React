@@ -19,64 +19,90 @@ import {
   SiNextdotjs,
   SiDjango,
   SiTypescript,
-  SiTailwindcss
+  SiTailwindcss,
 } from "react-icons/si";
+import SkillsGroup from "./SkillsGroup";
 
 const Skills = () => {
   return (
     <div className="container">
       <Title title="Skills" />
       <div className="skills_container">
-        <ul>
-          <li>
+        <SkillsGroup title="Front-End" color="red">
+          <div>
             <AiFillHtml5 />
-          </li>
-          <li>
+            <p>html</p>
+          </div>
+          <div>
             <FaCss3Alt />
-          </li>
-          <li>
+            <p>css</p>
+          </div>
+          <div>
             <SiJavascript />
-          </li>
-          <li>
-            <FaNode />
-          </li>
-          <li>
+            <p>js</p>
+          </div>
+
+          <div>
             <FaReact />
-          </li>
-          <li>
-            <SiExpress />
-          </li>
-          <li>
-            <FaGitAlt />
-          </li>
-          <li>
+            <p>React</p>
+          </div>
+          <div>
             <FaBootstrap />
-          </li>
-          <li>
-            <SiMongodb />
-          </li>
-          <li>
+            <p>Boostrap</p>
+          </div>
+          <div>
             <FaSass />
-          </li>
-          <li>
+            <p>Sass</p>
+          </div>
+        </SkillsGroup>
+
+        <SkillsGroup title="Back-End">
+          <div>
+            <FaNode />
+            <p>node</p>
+          </div>
+          <div>
+            <SiExpress />
+            <p>Express</p>
+          </div>
+          <div>
+            <SiMongodb />
+            <p>MongoDB</p>
+          </div>
+          <div>
+          <FaPython />
+          <p>Python</p>
+          </div>
+          <div>
+          <SiDjango />
+          <p>Django</p>
+          </div>
+        </SkillsGroup>
+        <SkillsGroup title="Dev-Tools">
+          <div>
+          <FaGitAlt />
+          <p>Git</p>
+          </div>
+          <div>
             <SiPostman />
-          </li>
-          <li>
-            <SiNextdotjs />
-          </li>
-          <li>
-            <FaPython />
-          </li>
-          <li>
-            <SiDjango />
-          </li>
-          <li>
-            <SiTypescript />
-          </li>
-          <li>
-              <SiTailwindcss/>
-          </li>
-        </ul>
+            <p>Postman</p>
+          </div>
+        </SkillsGroup>
+
+        <SkillsGroup title="Cosas que quiero aprender">
+          <div>
+          <SiNextdotjs />
+          <p>Next</p>
+          </div>
+          <div>
+          <SiTypescript />
+          <p>TypeScript</p>
+          </div>
+          <div>
+          <SiTailwindcss />
+          <p>Tailwind</p>
+          </div>
+        </SkillsGroup>
       </div>
     </div>
   );
