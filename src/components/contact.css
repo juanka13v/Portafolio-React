@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+}
+
+.contact_container {
+    width: 100%;
+    display: flex;
+}
+
+.form_container {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    border: 1px solid aqua;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.form button,
+.form input,
+.form textarea {
+    line-height: 1.6;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    padding: .4em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid slateblue;
+    resize: none;
+}
+
+.form button {
+    margin: 0 auto;
+    width: 90%;
+    border: 0;
+    background-color: slateblue;
+    text-transform: uppercase;
+    padding: .7em 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.desc_container {
+    flex: 1;
+}
