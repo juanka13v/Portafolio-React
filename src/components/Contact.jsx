@@ -1,5 +1,12 @@
 import "./contact.css";
 import Title from "./Title";
+import {
+  AiFillGithub,
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiOutlineMail,
+} from "react-icons/ai";
+
 
 const Contact = () => {
   return (
@@ -22,13 +29,33 @@ const Contact = () => {
             </p>
             <p>
               <label>Tu Mensaje:</label>
-              <textarea  rows="3"></textarea>
+              <textarea rows="3"></textarea>
             </p>
             <button type="submit">Enviar</button>
           </form>
         </div>
         <div className="desc_container">
-          <h4>Mensaje</h4>
+          <div className="desc">
+            <div className="desc_logo">
+            <AiOutlineMail />
+            </div>
+            <h3>Enviame un Mensaje</h3>
+            <p>
+              Si quieres ponerte en contacto conmigo puedes enviarme un mensaje
+              a mi correo o puedes enviarme a mis redes.
+            </p>
+            <div className="desc_social-media">
+              <a href="#">
+                <AiFillGithub />
+              </a>
+              <a href="#">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="#">
+                <AiFillLinkedin />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
 }
 
 .form_container {
-    flex: 1;
+    width: 50%;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -16,7 +16,8 @@
 }
 
 .form {
-    border: 1px solid aqua;
+    border: 2px solid springgreen;
+    border-radius: 10px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -54,6 +55,77 @@
 }
 
 
+
+
 .desc_container {
-    flex: 1;
+    width: 50%;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc_logo {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin: 2rem 0;
+}
+
+.desc h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.desc p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.desc_social-media {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 769px) {
+    .contact_container {
+        flex-direction: column;
+    }
+
+    .form_container {
+        width: 100%;
+        order: 2;
+    }
+
+    .desc_container {
+        width: 100%;
+        order: 1;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 481px) {
+    .desc p {
+        padding: 0;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    .form button {
+        margin: 1rem;
+    }
 }
