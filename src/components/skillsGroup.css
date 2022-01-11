@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
 }
 
 .group_title {
@@ -13,14 +14,18 @@
 
 .group {
     width: 100%;
+    height: 100%;
     padding: 1rem;
 }
 
 .group_items {
     display: grid;
+    height: 100%;
     border-radius: 7px;
     grid-template-columns: repeat(auto-fit, minmax(75px, 125px));
     justify-items: stretch;
+    justify-content: center;
+    align-content: center;
     gap: 10px 10px;
 }
 

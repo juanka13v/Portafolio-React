@@ -1,0 +1,33 @@
+.skills_container {
+    border: 2px solid springgreen;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 20px 15px;
+    padding: 1rem;
+}
+
+.frontend_skills {
+    grid-column: 1 / 7;
+    grid-row: 1 / 8;
+}
+
+.backend_skills {
+    grid-column: 7 / 13;
+    grid-row: 1 / 8;
+}
+
+.devtools_skills {
+    grid-column: 1 / 5;
+    grid-row: 8 / 12;
+}
+
+.others_skills {
+    grid-column: 5 / 13;
+    grid-row: 8 / 12;
+}
+
